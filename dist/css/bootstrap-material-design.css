@@ -334,24 +334,6 @@ body .container-fluid .jumbotron-danger {
 .btn.btn-raised:not(.btn-link):active,
 .input-group-btn .btn.btn-raised:not(.btn-link):active,
 .btn-group-raised .btn:not(.btn-link):active,
-.btn-group-raised .input-group-btn .btn:not(.btn-link):active {
-  outline: 0;
-}
-.btn.btn-raised:not(.btn-link):hover,
-.input-group-btn .btn.btn-raised:not(.btn-link):hover,
-.btn-group-raised .btn:not(.btn-link):hover,
-.btn-group-raised .input-group-btn .btn:not(.btn-link):hover,
-.btn.btn-raised:not(.btn-link):focus,
-.input-group-btn .btn.btn-raised:not(.btn-link):focus,
-.btn-group-raised .btn:not(.btn-link):focus,
-.btn-group-raised .input-group-btn .btn:not(.btn-link):focus,
-.btn.btn-raised:not(.btn-link).active,
-.input-group-btn .btn.btn-raised:not(.btn-link).active,
-.btn-group-raised .btn:not(.btn-link).active,
-.btn-group-raised .input-group-btn .btn:not(.btn-link).active,
-.btn.btn-raised:not(.btn-link):active,
-.input-group-btn .btn.btn-raised:not(.btn-link):active,
-.btn-group-raised .btn:not(.btn-link):active,
 .btn-group-raised .input-group-btn .btn:not(.btn-link):active,
 .btn.btn-raised:not(.btn-link):hover.btn-default,
 .input-group-btn .btn.btn-raised:not(.btn-link):hover.btn-default,
@@ -2841,15 +2823,13 @@ fieldset[disabled] .navbar .btn-link:focus {
   height: 10%;
   padding: 18px;
 }
-.card .card-footer button,
-.card .card-footer a {
+.card .card-footer button {
   margin: 0 !important;
   position: relative;
   bottom: 25px;
   width: auto;
 }
-.card .card-footer button:first-child,
-.card .card-footer a:first-child {
+.card .card-footer button:first-child {
   left: -15px;
 }
 .modal-content {

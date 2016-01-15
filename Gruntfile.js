@@ -633,7 +633,6 @@ module.exports = function (grunt) {
     "bootlint",
 
     "dist-less",
-    "dist-sass",
     "dist-js",
     "dist-fonts",
     "dist-sass"
