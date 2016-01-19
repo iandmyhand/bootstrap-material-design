@@ -71,20 +71,25 @@ h6,
 .h2,
 .h3,
 .h4 {
+  color: #2f2f2f;
   font-family: "Nanum Barun Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 200;
 }
 h1,
 h2,
 h3,
+.h1,
+.h2,
+.h3 {
+  font-weight: 300;
+}
+body,
 h4,
 h5,
 h6,
-.h1,
-.h2,
-.h3,
-.h4 {
-  color: #2f2f2f;
+.h4,
+.h5,
+.h6 {
+  font-weight: 200;
 }
 a,
 a:hover,
@@ -2781,8 +2786,8 @@ fieldset[disabled] .navbar .btn-link:focus {
   background: rgba(101, 101, 101, 0.9);
   border: none;
   border-radius: 2px;
-  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.03);
-          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.02), 0 1px 2px 0 rgba(0, 0, 0, 0.02);
+          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.02), 0 1px 2px 0 rgba(0, 0, 0, 0.02);
 }
 .tooltip,
 .tooltip.in {
@@ -2899,9 +2904,9 @@ fieldset[disabled] .navbar .btn-link:focus {
 .panel {
   background-color: #fbfaf6;
   border-radius: 3px;
-  border: 0;
-  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.03);
-          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+  border: 1px solid #e7e6e4;
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.02), 0 1px 2px 0 rgba(0, 0, 0, 0.02);
+          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.02), 0 1px 2px 0 rgba(0, 0, 0, 0.02);
 }
 .panel > .panel-heading,
 .panel.panel-default > .panel-heading {
@@ -2927,7 +2932,9 @@ fieldset[disabled] .navbar .btn-link:focus {
 }
 [class*="panel-"] > .panel-heading {
   color: #4b5053;
+  background-color: #fcfbf9;
   border: 0;
+  border-bottom: 1px solid #e7e6e4;
 }
 .panel-default > .panel-heading,
 .panel:not([class*="panel-"]) > .panel-heading {
@@ -3008,8 +3015,8 @@ hr.on-light {
   color: #5f6365;
   font-size: 14px;
   border-radius: 2px;
-  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.03);
-          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.03), 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.02), 0 1px 2px 0 rgba(0, 0, 0, 0.02);
+          box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.02), 0 1px 2px 0 rgba(0, 0, 0, 0.02);
   height: 0;
   -webkit-transition: -webkit-transform 0.2s ease-in-out, opacity 0.2s ease-in, height 0s linear 0.2s, padding 0s linear 0.2s, height 0s linear 0.2s;
        -o-transition: -o-transform 0.2s ease-in-out, opacity 0.2s ease-in, height 0s linear 0.2s, padding 0s linear 0.2s, height 0s linear 0.2s;

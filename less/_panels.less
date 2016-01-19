@@ -1,7 +1,7 @@
 .panel {
   background-color: @warm-grey-50;
   border-radius: 3px;
-  border: 0;
+  border: 1px solid @warm-grey-200;
 
   .variations(~".panel", ~" > .panel-heading", background-color, @white);
   .shadow-z-1;
@@ -10,7 +10,9 @@
 
 [class*="panel-"] > .panel-heading {
   color: @mdb-text-color-primary;
+  background-color: @warm-grey-25;
   border: 0;
+  border-bottom: 1px solid @warm-grey-200;
 }
 .panel-default, .panel:not([class*="panel-"]) {
   > .panel-heading {
