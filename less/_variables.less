@@ -1,10 +1,10 @@
 @import "_colors.less";
 
 // Typography elements
-@mdb-font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-@mdb-text-color-light:  ~"rgba(@{rgb-white}, 0.84)";
+@mdb-font-family: "Nanum Gothic","Helvetica Neue",Helvetica,Arial,sans-serif;
+@mdb-text-color-light: @warm-grey-600;
 @mdb-text-color-light-hex: @white; // for contrast function in inverse
-@mdb-text-color-primary: ~"rgba(@{rgb-black}, 0.87)";
+@mdb-text-color-primary: @warm-grey;
 @mdb-text-color-primary-hex: @black; // for contrast function in inverse
 @icon-color: rgba(0,0,0,0.5);
 
@@ -20,20 +20,21 @@
 // Converted bs variables
 
 // Bootstrap brand color customization
-@brand-primary: @teal;
-@brand-success: @green;
-@brand-danger: @red;
+@brand-primary: @warm-grey;
+@brand-success: @yellow-green;
+@brand-danger: @light-red;
 @brand-warning: @deep-orange;
-@brand-info: @light-blue;
+@brand-info: @deep-blue-200;
 
 @border-radius-base: 2px;
 @border-radius-small: 1px;
 
 // Typography
-@font-family-sans-serif: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+@font-family-sans-serif: "Nanum Barun Gothic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif: "Nanum Gothic", "Malgun Gothic", Times, serif;
 @headings-font-weight: 300;
 
-@body-bg: #EEEEEE;
+@body-bg: @deep-blue-A500;
 //---
 
 // import bs variables for sass, first declared wins.

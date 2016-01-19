@@ -193,7 +193,7 @@
 
     $args-extra: map-merge($args, (
             variation-color: $color-default,
-            variation-color-text: $mdb-text-color-light
+            variation-color-text: $mdb-text-color-primary
     ));
     @include call-variations-content-mixin($args-extra);
   }
@@ -207,7 +207,7 @@
   &#{$component}-primary#{$selector-suffix} {
     $args-primary: map-merge($args, (
             variation-color: $brand-primary,
-            variation-color-text: $mdb-text-color-light
+            variation-color-text: $mdb-text-color-primary
     ));
     @include call-variations-content-mixin($args-primary);
   }

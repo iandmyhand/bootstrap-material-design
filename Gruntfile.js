@@ -388,6 +388,18 @@ module.exports = function (grunt) {
           '**/*'
         ],
         dest: 'docs/dist/'
+      },
+      toProjectCss: {
+        expand: true,
+        cwd: 'dist/css/',
+        src: "*.min.css",
+        dest: "../managr/www/public/css/"
+      },
+      toProjectJs: {
+        expand: true,
+        cwd: 'dist/js/',
+        src: "*.min.js",
+        dest: "../managr/www/public/js/"
       }
     },
 
@@ -610,7 +622,8 @@ module.exports = function (grunt) {
     "csslint:dist",
     "cssmin:material",
     "cssmin:ripples",
-    "csslint:distmin"
+    "csslint:distmin",
+    "copy:toProjectCss"
   ]);
 
   grunt.registerTask("dist-js", [
@@ -618,7 +631,8 @@ module.exports = function (grunt) {
     "copy:material",
     "uglify:material",
     "copy:ripples",
-    "uglify:ripples"
+    "uglify:ripples",
+    "copy:toProjectJs"
   ]);
 
   grunt.registerTask("dist-fonts", [
@@ -634,8 +648,7 @@ module.exports = function (grunt) {
 
     "dist-less",
     "dist-js",
-    "dist-fonts",
-    "dist-sass"
+    "dist-fonts"
   ]);
 
   // Default task.
